@@ -10,7 +10,7 @@ var videos_div = document.getElementById("videos");
 async function search_result() {
   videos_div.innerHTML = null;
   let res = await fetch(
-    `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${q}&key=AIzaSyCYyjgKjUFG-FUc_bvmsub3ig5EhcGU6rM&maxResults=30`
+    `https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${q}&key=[apikeys]&maxResults=30`
   );
   let data = await res.json();
   console.log("data:", data);
